@@ -125,14 +125,15 @@ function fe_basic_strongarm() {
       'uc_cart-0' => array(
         'grid16-width' => 'grid16-5',
         'fusion-alignment' => 'fusion-right',
-        'prosper-general-styles' => 'prosper-shoppingcart-light',
+        'prosper-general-styles' => 'prosper-shoppingcart-dark',
       ),
       'uc_catalog-0' => array(
         'prosper-general-styles' => 'prosper-menu-list',
       ),
       'user-0' => array(
-        'grid16-width' => 'grid16-8',
-        'fusion-alignment' => 'fusion-center',
+        'grid16-width' => 'grid16-9',
+        'fusion-alignment' => 'fusion-right',
+        'fusion-content-alignment' => 'fusion-right-content',
         'fusion-login' => 'fusion-horiz-login',
       ),
     ),
@@ -228,6 +229,7 @@ function fe_basic_strongarm() {
 !street1
 !street2
 !city - !postal_code
+!zone_code
 !country_name_if';
 
   $export['uc_address_format_356'] = $strongarm;
@@ -296,7 +298,7 @@ function fe_basic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'uc_cart_block_empty_hide';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
 
   $export['uc_cart_block_empty_hide'] = $strongarm;
   $strongarm = new stdClass;
@@ -1098,7 +1100,7 @@ If this does not resolve the issue, please call in to complete your order.';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1297933461;
+  $strongarm->value = 1297946116;
 
   $export['update_last_check'] = $strongarm;
   $strongarm = new stdClass;

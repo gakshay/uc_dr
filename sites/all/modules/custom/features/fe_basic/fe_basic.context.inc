@@ -33,17 +33,17 @@ function fe_basic_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => 1,
         ),
+        'user-0' => array(
+          'module' => 'user',
+          'delta' => 0,
+          'region' => 'header_top',
+          'weight' => 0,
+        ),
         'uc_cart-0' => array(
           'module' => 'uc_cart',
           'delta' => 0,
           'region' => 'header',
           'weight' => 0,
-        ),
-        'user-0' => array(
-          'module' => 'user',
-          'delta' => 0,
-          'region' => 'header',
-          'weight' => 1,
         ),
       ),
     ),
